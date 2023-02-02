@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login</title>
+    <title>Register</title>
     <style>
         .kotak_form{
 
@@ -22,7 +22,7 @@ padding: 40px 20px;
 <body>
     <div class="kotak_form">
     <header>
-        <h3>Login</h3>
+        <h3>Register</h3>
     </header>
 
     <form action="prosestambah.php" method="POST">
