@@ -16,12 +16,12 @@ Anggota dan Tugas
 
 
 
-Tampilan Dashboard:
+Tampilan Dashboard: yoga
 -) Buat Sidebar/header (Terserah tim Frontend)
 -) Isi dengan 3 kotak panjang (disusun dari atas ke bawah) untuk menentukan jumlah data setiap tabel (User, Perusahaan, Transakasi)
 -) Footer isi aja kek biasa
 
-Tampilan Login Register:
+Tampilan Login Register: udah
 -) Register (Nama, Password, Email, NoHp)
 -) Login (Nama, Password)
 
