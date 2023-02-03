@@ -11,7 +11,7 @@ Anggota dan Tugas
 
 <h1>Backend</h1>
 -) Janssen<br>
--) Steaven.S<br>
+-) Steve.S<br>
 -) Richie<br>
 
 
