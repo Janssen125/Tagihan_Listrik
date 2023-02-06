@@ -28,7 +28,7 @@ if (isset($_POST['submit'])) {
         $tarif_daya = $row['tarif_daya'];
         $stand_meter = $row['stand_meter'];
     }
-    $stand_meter_setelah = $stand_meter + ($_POST['tagihan'] / $_POST['hargakwh']);
+    $stand_meter_setelah = $stand_meter + round($_POST['tagihan'] / $_POST['hargakwh'],0,PHP_ROUND_HALF_UP);
     $tagihan = $_POST['tagihan'];
     $hargakwh = $_POST['hargakwh'];
     $bulan_tahun = $_POST['bulan_tahun'];
@@ -42,6 +42,7 @@ if (isset($_POST['submit'])) {
     $query2 = mysqli_query($db, $query);
 
     if ($query2) {
+        mysqli_query($db, "UPDATE pelanggan SET stand_meter = '$stand_meter_setelah' WHERE id_pelanggan = $id_pelanggan");
         echo "<script>alert('Transaksi Berhasil Ditambah');location.href=('../../dashboard/transaksi/')</script>";
     } else {
         echo "<script>alert('Transaksi Gagal Ditambah');location.href=('../../dashboard/transaksi/')</script>";
